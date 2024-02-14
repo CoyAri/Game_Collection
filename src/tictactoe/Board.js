@@ -20,7 +20,7 @@ export default function Board() {
         if (xNext) nextSquares[i] = "X"
         else nextSquares[i] = "O"
 
-        if (squares.includes(null) === false || calculateWinner(nextSquares)) {
+        if (nextSquares.includes(null) == false || calculateWinner(nextSquares)) {
             setReset(true)
         }
 
