@@ -21,10 +21,10 @@ export default function Home() {
                 </div>
               </div>
             </Link>
-            <Link href='/tiktactoe' passHref legacyBehavior>
+            <Link href='/tictactoe' passHref legacyBehavior>
               <div className="bg-stone-800 rounded-md p-2 size-32 hover:cursor-pointer" onClick={handleClick}>
                 <div className="">
-                  tiktactoe
+                tictactoe
                 </div>
               </div>
             </Link>

@@ -5,9 +5,7 @@ import Link from "next/link"
 export default function Header() {
     const [hide, setHide] = useAtom(hideAtom)
 
-    
-
-    const handleClick = (e) => {
+    const handleClick = () => {
         if (hide === 'hidden') setHide('block')
         else setHide('hidden')
     }
