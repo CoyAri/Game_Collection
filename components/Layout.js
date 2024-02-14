@@ -5,7 +5,7 @@ export default function Layout(props) {
 
     return (
         <>
-            <div className="h-dvh bg-stone-900">
+            <div className="h-dvh bg-stone-900 select-none">
                 <br/>
                 <br/>
                 <br/>
@@ -17,7 +17,7 @@ export default function Layout(props) {
                     {props.children}
                 </div>
                 <br />
-                <Footer />
+                <Footer className="hidden"/>
             </div>
         </>
     )
