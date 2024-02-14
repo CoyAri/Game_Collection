@@ -1,3 +1,5 @@
-import { atomWithStorage } from 'jotai/utils'
+import { atomWithStorage, createJSONStorage } from 'jotai/utils'
 
-export const hideAtom = atomWithStorage('backButton', 'hidden')
+const storage = createJSONStorage(() => sessionStorage)
+
+export const hideAtom = atomWithStorage('backButton', 'hidden', storage)
