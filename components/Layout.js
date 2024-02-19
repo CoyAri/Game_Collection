@@ -7,13 +7,9 @@ export default function Layout(props) {
         <>
             <div className="h-dvh bg-stone-900 select-none">
                 <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
                 <Header/>
                 <br/>
-                <div className="container h-[28rem] flex justify-center mb-6">
+                <div className="container h-full max-h-[40rem] flex justify-center mb-6">
                     {props.children}
                 </div>
                 <br />
