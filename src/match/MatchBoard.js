@@ -24,6 +24,7 @@ export default function MatchBoard() {
         const hideTime = setTimeout(() => {
             setShowCards(hideCards)
         }, 2000)
+
     }, [start], [])
 
 
@@ -75,10 +76,13 @@ export default function MatchBoard() {
     const handleReset = () => {
         console.log('Indeed!')
         const resetCards = Array(16).fill(false)
+        const resetShow = Array(16).fill(true)
         setCards(resetCards)
         setMatched(resetCards)
         setCountMoves(0)
+        setShowCards(resetShow)
         setStart(!start)
+        setReset(!reset)
     }
 
     if (!matched.includes(false)) {
